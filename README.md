@@ -14,5 +14,5 @@
  Exemplo
  <livewire:search-dropdown :modelClassName="'App\\Models\\User'" :column="'name'" />
 
- Passe a rota do seu modelo dentro da variavel  :modelClassName e a culuna a ser pesquisada neste modelo  use o :column
+ Passe a rota do seu modelo dentro da variavel  :modelClassName e a coluna a ser pesquisada neste modelo  use o :column
 
