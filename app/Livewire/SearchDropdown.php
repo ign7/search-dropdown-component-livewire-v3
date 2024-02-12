@@ -12,6 +12,7 @@ class SearchDropdown extends Component
 
     public $query;
     public $modelClassName;
+    public $mode;
     public $contacts;
     public $highlightIndex, $atributte, $searchFilter,$column;
 
@@ -65,7 +66,7 @@ class SearchDropdown extends Component
             $this->searchFilter = $contact['id'];
             $this->clear();
         }
-        $this->dispatch('search_id',$this->searchFilter);
+        $this->dispatch('search_id',$this->searchFilter,$this->mode);
     }
 
     public function clear()
