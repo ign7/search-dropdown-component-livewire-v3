@@ -14,5 +14,20 @@
  Exemplo
   <livewire:search-dropdown :modelClassName="'App\\Models\\User'" :column="'name'"  :search_mode="'colaborador'"/>
 
- Passe a rota do seu modelo dentro da variavel  :modelClassName   :column="'nome_coluna_selecionada'"  :sarch_mode="'(tag_identificacao) '"  
+ Passe a rota do seu modelo dentro da variavel  :modelClassName   :column="'nome_coluna_selecionada'"  :search_mode="'(tag_identificacao) '"  
+
+    public $search_id, $search_mode;
+
+    protected $listeners = [
+        'search_id' => 'setIdModel',
+    ];
+
+
+    public function setIdModel($search_id, $search_mode)
+    {
+        $this->search_mode = $search_mode;
+        if ($this->search_mode == 'veiculo')
+            dump($this->search_mode);
+        $this->search_id = $search_id;
+    }
 
