@@ -9,7 +9,7 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 <div class="">
-                    <livewire:search-dropdown :modelClassName="'App\\Models\\User'" :column="'name'"  :mode="'user'"/>
+                    <livewire:search-dropdown :modelClassName="'App\\Models\\User'" :column="'name'"  :search_mode="'user'"/>
                 </div>
             </div>
         </div>

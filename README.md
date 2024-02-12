@@ -12,7 +12,7 @@
 ### Como Usar ? 
 
  Exemplo
- <livewire:search-dropdown :modelClassName="'App\\Models\\User'" :column="'name'" />
+  <livewire:search-dropdown :modelClassName="'App\\Models\\User'" :column="'name'"  :search_mode="'colaborador'"/>
 
- Passe a rota do seu modelo dentro da variavel  :modelClassName e a coluna a ser pesquisada neste modelo  use o :column
+ Passe a rota do seu modelo dentro da variavel  :modelClassName   :column="'nome_coluna_selecionada'"  :sarch_mode="'(tag_identificacao) '"  
 
