@@ -30,7 +30,7 @@
             dump($this->search_mode);
         $this->search_id = $search_id;
     }
-
+## Testar quando chegar em casa
 <div>
     <div class="w-full ">
         <div class="w-2/3 flex justify-end items-center relative rounded-md bg-gray-200 border border-gray-300 rounded">
@@ -50,7 +50,6 @@
             </div>
         </div>
 
-        Testar quando chegar em casa
         <div wire:loading class="absolute z-10 w-full bg-white rounded-t-none shadow-lg list-group">
             <div class="list-item">Searching...</div>
         </div>
@@ -65,10 +64,6 @@
 
                     <div class="absolute z-10 w-1/2 bg-white rounded-t-none shadow-lg list-group">
                         @if (!empty($contacts))
-                            {{-- @foreach ($contacts as $contact)
-                                <p  wire:click.change="selectClickContact({{ $contact['id'] }})"  class="hover:bg-gray-200" value="{{ $contact['id'] }}">
-                                    {{ $contact[$column] }}</p>
-                            @endforeach --}}
                             @foreach ($contacts as $index => $contact)
                                 <p wire:click.change="selectClickContact({{ $contact['id'] }})"
                                     class="hover:bg-gray-200 @if ($highlightIndex === $index) bg-gray-200 @endif"
@@ -84,5 +79,7 @@
             </div>
         @endif
     </div>
+
 </div>
+
 
