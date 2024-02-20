@@ -31,9 +31,8 @@
         $this->search_id = $search_id;
     }
 ## Testar quando chegar em casa
-<div>
-    <div class="w-full ">
-        <div class="w-2/3 flex justify-end items-center relative rounded-md bg-gray-200 border border-gray-300 rounded">
+
+ <div class="w-2/3 flex justify-end items-center relative rounded-md bg-gray-200 border border-gray-300 rounded">
             <input type="text"
                 class="form-input rounded-md w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                 placeholder="{{ $atributte ?? 'Pesquisar ...' }}" wire:model="query" wire:keydown.escape="clear"
@@ -48,38 +47,5 @@
                         clip-rule="evenodd" />
                 </svg>
             </div>
-        </div>
-
-        <div wire:loading class="absolute z-10 w-full bg-white rounded-t-none shadow-lg list-group">
-            <div class="list-item">Searching...</div>
-        </div>
-
-
-        @if (!empty($query))
-            <div class="fixed top-0 bottom-0 left-0 right-0" wire:click="clear"></div>
-
-            <div class="absolute z-10 w-full bg-white rounded-t-none shadow-lg list-group">
-                @if (!empty($query))
-                    <div class="fixed top-0 bottom-0 left-0 right-0" wire:click="resetar"></div>
-
-                    <div class="absolute z-10 w-1/2 bg-white rounded-t-none shadow-lg list-group">
-                        @if (!empty($contacts))
-                            @foreach ($contacts as $index => $contact)
-                                <p wire:click.change="selectClickContact({{ $contact['id'] }})"
-                                    class="hover:bg-gray-200 @if ($highlightIndex === $index) bg-gray-200 @endif"
-                                    value="{{ $contact['id'] }}">
-                                    {{ $contact[$column] }}
-                                </p>
-                            @endforeach
-                        @else
-                            <div class="list-item">No results!</div>
-                        @endif
-                    </div>
-                @endif
-            </div>
-        @endif
-    </div>
-
-</div>
-
+ </div>
 
