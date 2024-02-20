@@ -32,7 +32,7 @@
     }
 ## Testar quando chegar em casa
 
- <div class="w-2/3 flex justify-end items-center relative rounded-md bg-gray-200 border border-gray-300 rounded">
+ "<div class="w-2/3 flex justify-end items-center relative rounded-md bg-gray-200 border border-gray-300 rounded">
             <input type="text"
                 class="form-input rounded-md w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                 placeholder="{{ $atributte ?? 'Pesquisar ...' }}" wire:model="query" wire:keydown.escape="clear"
@@ -47,5 +47,5 @@
                         clip-rule="evenodd" />
                 </svg>
             </div>
- </div>
+ </div>"
 
